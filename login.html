@@ -1,0 +1,28 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<input type="text" id="nama" placeholder="Username">
+<input type="password" id="pass" placeholder="Password">
+<button id="login">Login</button>
+
+<div id="msg"></div>
+
+<script>
+$("#login").click(function(){
+  $.ajax({
+    url: "login.php",
+    type: "POST",
+    dataType: "json",
+    data: {
+      nama: $("#nama").val(),
+      pass: $("#pass").val()
+    },
+    success: function(res){
+      $("#msg").text(res.msg);
+
+      if(res.status === "success"){
+        window.location.href = "index.php";
+      }
+    }
+  });
+});
+</script>

@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<input type="text" id="nama" placeholder="Username">
+<input type="password" id="pass" placeholder="Password">
+<button id="register">Register</button>
+
+<div id="msg"></div>
+
+<script>
+$("#register").click(function(){
+  $.ajax({
+    url: "register.php",
+    type: "POST",
+    dataType: "json",
+    data: {
+      nama: $("#nama").val(),
+      pass: $("#pass").val()
+    },
+    success: function(res){
+      $("#msg").text(res.msg);
+    }
+  });
+});
+</script>
