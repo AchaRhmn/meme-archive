@@ -25,7 +25,6 @@ if(!isset($_SESSION["user_id"])){
 
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
-    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -56,11 +55,11 @@ if(!isset($_SESSION["user_id"])){
         <!-- Mobile Nav (max width 767px)-->
         <div class="mobile-nav">
             <!-- Navbar Brand -->
-            <div class="amado-navbar-brand">
+            <div class="memeasoy-navbar-brand">
                 <a href="index.php"><img src="img/core-img/logo.png" alt=""></a>
             </div>
             <!-- Navbar Toggler -->
-            <div class="amado-navbar-toggler">
+            <div class="memeasoy-navbar-toggler">
                 <span></span><span></span><span></span>
             </div>
         </div>
@@ -78,7 +77,7 @@ if(!isset($_SESSION["user_id"])){
             </div>
 
             <!-- Nav -->
-            <nav class="amado-nav">
+            <nav class="memeasoy-nav">
                 <ul>
                     <li class="active"><a href="index.php">Home</a></li>
                     <li><a href="share.php">Share meme</a></li>
@@ -90,7 +89,7 @@ if(!isset($_SESSION["user_id"])){
 
         <!-- Product Catagories Area Start -->
         <div class="products-catagories-area clearfix">
-            <div class="amado-pro-catagory clearfix">
+            <div class="memeasoy-pro-catagory clearfix">
 
                 <!-- Single Catagory -->
                 <div class="single-products-catagory clearfix">
@@ -102,7 +101,7 @@ if(!isset($_SESSION["user_id"])){
                             <p>2013 • Forum Internet</p>
                             <h4>Doge Meme</h4>
                         </div>
-                    </a>
+                    
                 </div>
 
                 <!-- Single Catagory -->
@@ -115,7 +114,7 @@ if(!isset($_SESSION["user_id"])){
                             <p>2017 • Twitter</p>
                             <h4>Distracted Boyfriend</h4>
                         </div>
-                    </a>
+                    
                 </div>
 
                 <!-- Single Catagory -->
@@ -128,7 +127,7 @@ if(!isset($_SESSION["user_id"])){
                             <p>2019 • TikTok</p>
                             <h4>Woman Yelling at Cat</h4>
                         </div>
-                    </a>
+                    
                 </div>
 
                 <!-- Single Catagory -->
@@ -141,7 +140,7 @@ if(!isset($_SESSION["user_id"])){
                             <p>2020 • Reddit</p>
                             <h4>Among Us Meme</h4>
                         </div>
-                    </a>
+                    
                 </div>
 
                 <!-- Single Catagory -->
@@ -154,7 +153,7 @@ if(!isset($_SESSION["user_id"])){
                             <p>2021 • Twitter</p>
                             <h4>Gigachad</h4>
                         </div>
-                    </a>
+                    
                 </div>
 
                 <!-- Single Catagory -->
@@ -167,7 +166,7 @@ if(!isset($_SESSION["user_id"])){
                             <p>2022 • TikTok</p>
                             <h4>NPC Live Meme</h4>
                         </div>
-                    </a>
+                    
                 </div>
 
        

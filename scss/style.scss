@@ -329,7 +329,7 @@ img {
     @media #{$breakpoint-xs} {
         @include display-flex(flex);
     }
-    .amado-navbar-brand {
+    .memeasoy-navbar-brand {
         @include flex(0 0 70px);
         max-width: 70px;
         a {
@@ -337,7 +337,7 @@ img {
             max-width: 70px;
         }
     }
-    .amado-navbar-toggler {
+    .memeasoy-navbar-toggler {
         cursor: pointer;
         span {
             width: 28px;
@@ -379,7 +379,7 @@ img {
 
 /* Essence Button */
 
-.amado-btn {
+.memeasoy-btn {
     display: inline-block;
     min-width: 160px;
     height: 55px;
@@ -528,7 +528,7 @@ img {
             margin-bottom: 100px;
             display: block;
         }
-        .amado-nav {
+        .memeasoy-nav {
             li {
                 a {
                     font-size: 14px;
@@ -580,8 +580,8 @@ img {
                 }
             }
         }
-        .amado-btn-group {
-            .amado-btn {
+        .memeasoy-btn-group {
+            .memeasoy-btn {
                 width: 160px;
                 display: block;
             }
@@ -664,7 +664,7 @@ img {
             order: 2;
         }
     }
-    .amado_product_area {
+    .memeasoy_product_area {
         position: relative;
         z-index: 1;
         @include flex(0 0 calc(95% - 550px));
@@ -1051,7 +1051,7 @@ img {
                         color: #959595;
                     }
                 }
-                .amado-btn {
+                .memeasoy-btn {
                     width: 310px;
                     height: 80px;
                     line-height: 80px;

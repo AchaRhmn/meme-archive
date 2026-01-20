@@ -101,10 +101,10 @@ $user  = mysqli_fetch_assoc($query);
 
     <!-- MOBILE NAV -->
     <div class="mobile-nav">
-        <div class="amado-navbar-brand">
+        <div class="memeasoy-navbar-brand">
             <a href="index.php"><img src="img/core-img/logo.png" alt=""></a>
         </div>
-        <div class="amado-navbar-toggler">
+        <div class="memeasoy-navbar-toggler">
             <span></span><span></span><span></span>
         </div>
     </div>
@@ -118,7 +118,7 @@ $user  = mysqli_fetch_assoc($query);
         <div class="logo">
             <a href="index.php"><img src="img/core-img/logo.png" alt=""></a>
         </div>
-            <nav class="amado-nav">
+            <nav class="memeasoy-nav">
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li  class="active"><a href="share.php">Share meme</a></li>
@@ -180,7 +180,7 @@ $user  = mysqli_fetch_assoc($query);
                                 <input type="text" class="form-control" id="memeImage">
                             </div>
 
-                            <button type="submit" class="btn amado-btn w-100 mt-3">
+                            <button type="submit" class="btn memeasoy-btn w-100 mt-3">
                                 Share Meme
                             </button>
 

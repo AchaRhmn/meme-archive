@@ -262,24 +262,24 @@ img {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
-  .mobile-nav .amado-navbar-brand {
+  .mobile-nav .memeasoy-navbar-brand {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 70px;
     flex: 0 0 70px;
     max-width: 70px; }
-    .mobile-nav .amado-navbar-brand a {
+    .mobile-nav .memeasoy-navbar-brand a {
       display: block;
       max-width: 70px; }
-  .mobile-nav .amado-navbar-toggler {
+  .mobile-nav .memeasoy-navbar-toggler {
     cursor: pointer; }
-    .mobile-nav .amado-navbar-toggler span {
+    .mobile-nav .memeasoy-navbar-toggler span {
       width: 28px;
       height: 3px;
       background-color: #fbb710;
       display: block;
       margin-bottom: 5px;
       border-radius: 2px; }
-      .mobile-nav .amado-navbar-toggler span:last-child {
+      .mobile-nav .memeasoy-navbar-toggler span:last-child {
         margin-bottom: 0; }
 
 /* ScrollUp */
@@ -305,7 +305,7 @@ img {
       right: 30px; } }
 
 /* Essence Button */
-.amado-btn {
+.memeasoy-btn {
   display: inline-block;
   min-width: 160px;
   height: 55px;
@@ -317,7 +317,7 @@ img {
   line-height: 56px;
   background-color: #fbb710;
   font-weight: 400; }
-  .amado-btn.active, .amado-btn:hover, .amado-btn:focus {
+  .memeasoy-btn.active, .memeasoy-btn:hover, .memeasoy-btn:focus {
     font-size: 18px;
     color: #ffffff;
     background-color: #131212; }
@@ -449,7 +449,7 @@ img {
     .main-content-wrapper .header-area .logo {
       margin-bottom: 100px;
       display: block; }
-    .main-content-wrapper .header-area .amado-nav li a {
+    .main-content-wrapper .header-area .memeasoy-nav li a {
       font-size: 14px;
       text-transform: uppercase;
       position: relative;
@@ -459,7 +459,7 @@ img {
       line-height: 0.9;
       color: #131212;
       font-weight: normal; }
-      .main-content-wrapper .header-area .amado-nav li a::after {
+      .main-content-wrapper .header-area .memeasoy-nav li a::after {
         -webkit-transition-duration: 500ms;
         transition-duration: 500ms;
         width: 30px;
@@ -471,19 +471,19 @@ img {
         background-color: #fbb710;
         z-index: 10;
         content: ''; }
-      .main-content-wrapper .header-area .amado-nav li a:hover, .main-content-wrapper .header-area .amado-nav li a:focus {
+      .main-content-wrapper .header-area .memeasoy-nav li a:hover, .main-content-wrapper .header-area .memeasoy-nav li a:focus {
         color: #fbb710; }
-    .main-content-wrapper .header-area .amado-nav li:hover a::after, .main-content-wrapper .header-area .amado-nav li:focus a::after {
+    .main-content-wrapper .header-area .memeasoy-nav li:hover a::after, .main-content-wrapper .header-area .memeasoy-nav li:focus a::after {
       left: -75px; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .main-content-wrapper .header-area .amado-nav li:hover a::after, .main-content-wrapper .header-area .amado-nav li:focus a::after {
+        .main-content-wrapper .header-area .memeasoy-nav li:hover a::after, .main-content-wrapper .header-area .memeasoy-nav li:focus a::after {
           left: -50px; } }
-    .main-content-wrapper .header-area .amado-nav li.active a::after {
+    .main-content-wrapper .header-area .memeasoy-nav li.active a::after {
       left: -75px; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .main-content-wrapper .header-area .amado-nav li.active a::after {
+        .main-content-wrapper .header-area .memeasoy-nav li.active a::after {
           left: -50px; } }
-    .main-content-wrapper .header-area .amado-btn-group .amado-btn {
+    .main-content-wrapper .header-area .memeasoy-btn-group .memeasoy-btn {
       width: 160px;
       display: block; }
     .main-content-wrapper .header-area .cart-fav-search a {
@@ -559,7 +559,7 @@ img {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2; } }
-  .main-content-wrapper .amado_product_area {
+  .main-content-wrapper .memeasoy_product_area {
     position: relative;
     z-index: 1;
     -webkit-box-flex: 0;
@@ -568,21 +568,21 @@ img {
     width: calc(95% - 550px);
     max-width: calc(95% - 550px); }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .main-content-wrapper .amado_product_area {
+      .main-content-wrapper .memeasoy_product_area {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100% - 550px);
         flex: 0 0 calc(100% - 550px);
         width: calc(100% - 550px);
         max-width: calc(100% - 550px); } }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .main-content-wrapper .amado_product_area {
+      .main-content-wrapper .memeasoy_product_area {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100% - 460px);
         flex: 0 0 calc(100% - 460px);
         width: calc(100% - 460px);
         max-width: calc(100% - 460px); } }
     @media only screen and (max-width: 767px) {
-      .main-content-wrapper .amado_product_area {
+      .main-content-wrapper .memeasoy_product_area {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -923,15 +923,15 @@ img {
           text-align: center;
           cursor: pointer;
           color: #959595; }
-      .main-content-wrapper .single-product-area .single_product_desc .cart .amado-btn {
+      .main-content-wrapper .single-product-area .single_product_desc .cart .memeasoy-btn {
         width: 310px;
         height: 80px;
         line-height: 80px; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
-          .main-content-wrapper .single-product-area .single_product_desc .cart .amado-btn {
+          .main-content-wrapper .single-product-area .single_product_desc .cart .memeasoy-btn {
             width: 250px; } }
         @media only screen and (max-width: 767px) {
-          .main-content-wrapper .single-product-area .single_product_desc .cart .amado-btn {
+          .main-content-wrapper .single-product-area .single_product_desc .cart .memeasoy-btn {
             width: 280px; } }
 
 .search-wrapper-on .search-wrapper {
@@ -1455,7 +1455,7 @@ img {
 }
 
 /* Button */
-.checkout_details_area .amado-btn {
+.checkout_details_area .memeasoy-btn {
     background-color: #fbb710;
     color: #000;
     height: 50px;
@@ -1464,7 +1464,7 @@ img {
     transition: all 0.3s ease;
 }
 
-.checkout_details_area .amado-btn:hover {
+.checkout_details_area .memeasoy-btn:hover {
     background-color: #000;
     color: #fbb710;
     border: 1px solid #fbb710;
