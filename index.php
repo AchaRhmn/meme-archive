@@ -1,9 +1,19 @@
 <?php
 session_start();
+include "php/config.php"; 
+
 if(!isset($_SESSION["user_id"])){
     header("Location: login.html");
     exit;
 }
+
+
+$memeQuery = mysqli_query($conn, "
+    SELECT meme.*, user.nama 
+    FROM meme 
+    LEFT JOIN user ON meme.ID_user = user.ID_user
+    ORDER BY meme.judul DESC
+");
 ?>
 
 
@@ -169,7 +179,21 @@ if(!isset($_SESSION["user_id"])){
                     
                 </div>
 
-       
+             
+
+                  <?php while($meme = mysqli_fetch_assoc($memeQuery)) { ?>
+
+                        <div class="single-products-catagory clearfix">
+                            <img src="<?= htmlspecialchars($meme['pic']) ?>" alt="">
+                            <div class="hover-content">
+                                <div class="line"></div>
+                                <p>Uploaded by <?= htmlspecialchars($meme['nama']) ?></p>
+                                <h4><?= htmlspecialchars($meme['judul']) ?></h4>
+                            </div>
+                        </div>
+
+                    <?php } ?>
+
 
                 
             </div>

@@ -2,7 +2,7 @@
 session_start();
 include "php/config.php";
 
-if(!isset($_SESSION['user_id'])){
+if (!isset($_SESSION['user_id'])) {
     header("Location: login.html");
     exit;
 }
@@ -11,7 +11,15 @@ $id = $_SESSION['user_id'];
 
 $query = mysqli_query($conn, "SELECT nama, email FROM user WHERE ID_user='$id'");
 $user  = mysqli_fetch_assoc($query);
+
+$countQ = mysqli_query($conn, "
+    SELECT COUNT(*) AS total 
+    FROM meme 
+    WHERE ID_user='$id'
+");
+$count = mysqli_fetch_assoc($countQ);
 ?>
+
 
 
 <!DOCTYPE html>
@@ -155,7 +163,7 @@ $user  = mysqli_fetch_assoc($query);
                         <!-- INFO -->
                         <div id="profileInfo">
                             <p><strong>Email:</strong> <?= htmlspecialchars($user['email']) ?></p>
-                            <p><strong>Total Meme Dibagikan:</strong> 5</p>
+                            <p><strong>Total Meme Dibagikan:</strong><?= $count['total'] ?? 0 ?></p>
                             <button class="btn memeasoy-btn mt-2" id="editProfileBtn">
                                 Edit Profile
                             </button>

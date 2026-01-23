@@ -148,10 +148,10 @@ $user  = mysqli_fetch_assoc($query);
 
                             <div class="form-group">
                                 <label>Judul Meme</label>
-                                <input type="text" class="form-control" id="memeTitle">
+                                <input name="judul" type="text" class="form-control" id="memeTitle">
                             </div>
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label>Kategori Meme</label>
                                 <select class="form-control" id="memeCategory">
                                     <option value="">-- Pilih Kategori --</option>
@@ -163,21 +163,16 @@ $user  = mysqli_fetch_assoc($query);
                                     <option>Indonesian Meme</option>
                                     <option>Random Meme</option>
                                 </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Asal Usul Meme</label>
-                                <textarea class="form-control" id="memeOrigin" rows="3"></textarea>
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
                                 <label>Kenapa Bisa Terkenal?</label>
-                                <textarea class="form-control" id="memeReason" rows="3"></textarea>
+                                <textarea name="desk" class="form-control" id="memeDesc" rows="3"></textarea>
                             </div>
 
                             <div class="form-group">
                                 <label>Link Gambar Meme</label>
-                                <input type="text" class="form-control" id="memeImage">
+                                <input name="pic" type="text" class="form-control" id="memeImage">
                             </div>
 
                             <button type="submit" class="btn memeasoy-btn w-100 mt-3">
@@ -219,6 +214,7 @@ $(document).ready(function(){
         `);
     }
 
+    // Preview image
     $("#memeImage").on("keyup", function(){
         let img = $(this).val();
         if(img !== ""){
@@ -229,28 +225,42 @@ $(document).ready(function(){
         }
     });
 
+    // Submit form via AJAX
     $("#shareForm").submit(function(e){
         e.preventDefault();
 
         if(
             $("#memeTitle").val() === "" ||
-            $("#memeCategory").val() === "" ||
             $("#memeOrigin").val() === "" ||
-            $("#memeReason").val() === "" ||
             $("#memeImage").val() === ""
         ){
-            showAlert("danger", "Semua field wajib diisi.");
-        } else {
-            showAlert("success", "Meme berhasil disimpan. Mengalihkan ke halaman Meme...");
-
-            setTimeout(function(){
-                window.location.href = "shop.html";
-            }, 1500);
+            showAlert("danger", "Judul, deskripsi, dan gambar wajib diisi.");
+            return;
         }
+
+        $.ajax({
+            url: "php/simpan_meme.php",
+            type: "POST",
+            data: $(this).serialize(),
+            success: function(response){
+                if(response === "success"){
+                    showAlert("success", "Meme berhasil disimpan!");
+                    setTimeout(() => {
+                        window.location.href = "index.php";
+                    }, 1200);
+                } else {
+                    showAlert("danger", response);
+                }
+            },
+            error: function(){
+                showAlert("danger", "Terjadi kesalahan server.");
+            }
+        });
     });
 
 });
 </script>
+
 
 </body>
 </html>
