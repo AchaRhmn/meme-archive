@@ -109,6 +109,11 @@ $count = mysqli_fetch_assoc($countQ);
             font-size: 13px;
             color: #aaa;
         }
+
+        .profile-card .btn{
+         width:100%;
+        }
+
     </style>
 </head>
 
@@ -164,9 +169,15 @@ $count = mysqli_fetch_assoc($countQ);
                         <div id="profileInfo">
                             <p><strong>Email:</strong> <?= htmlspecialchars($user['email']) ?></p>
                             <p><strong>Total Meme Dibagikan:</strong><?= $count['total'] ?? 0 ?></p>
-                            <button class="btn memeasoy-btn mt-2" id="editProfileBtn">
-                                Edit Profile
+                            <button class="btn memeasoy-btn mt-2" id="editProfileBtn"> Edit Profile
                             </button>
+
+                                <a href="php/logout.php" 
+                                class="btn btn-danger mt-2"
+                                onclick="return confirm('Yakin ingin logout?')">
+                                Logout
+                                </a>
+
                         </div>
 
                         <!-- EDIT FORM -->
